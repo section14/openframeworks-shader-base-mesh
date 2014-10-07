@@ -3,6 +3,12 @@
 baseMesh::baseMesh()
 {
     lightShader.load("shaders/lightShader");
+    
+    //this defines where the color comes from
+    //0 takes whatever RGB values you define
+    //1 gets the data from a .mtl file
+    //this is not accessed directly
+    //
     shaderColorSource = 0;
     
     //if you need to load an image to pass in use this
