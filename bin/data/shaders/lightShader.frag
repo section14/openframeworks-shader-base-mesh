@@ -80,7 +80,7 @@ void main()
        specularCoefficient = pow(cosAngle, materialShine);
     }
 
-    vec3 specular = specularCoefficient * specularColor * color.rgb; //experiment
+    vec3 specular = specularCoefficient * specularColor * color.rgb;
 
     ///////////////////////////
     //attenuation /////////////
