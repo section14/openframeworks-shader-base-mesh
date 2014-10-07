@@ -33,7 +33,7 @@ void testApp::setup()
     mesh->addColors(151, 150, 144, 255);
     mesh->scaleMesh(0.0);
     
-    //sphere mesh
+    //plane mesh
     mesh = new baseMesh();
     mesh->setupPlaneMesh(50,50,8,4) //width, height, rows, columns
     mesh->addColors(151, 150, 144, 255);
