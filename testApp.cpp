@@ -59,16 +59,11 @@ void testApp::update()
 
 void testApp::draw()
 {
-    //pass to meshes for their shader///////////////////////////////////////////////
     //ofVec3f is used as an easy way to pass three floats on lightAttenuation///////
     lightLocation = pointLight.getPosition();
     lightAttenuation = ofVec3f(pointLight.getAttenuationConstant(), pointLight.getAttenuationLinear(), pointLight.getAttenuationQuadratic());
     cameraLocation = camera.getPosition();
     ///////////////////////////////////
-    
-    lightLocation = pointLight.getPosition();
-    lightAttenuation = ofVec3f(pointLight.getAttenuationConstant(), pointLight.getAttenuationLinear(), pointLight.getAttenuationQuadratic());
-    cameraLocation = camera.getPosition();
     
     camera.begin();
     pointLight.enable();
