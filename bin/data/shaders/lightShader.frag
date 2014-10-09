@@ -17,7 +17,7 @@ uniform int shaderColorSource;
 in vec2 texCoordVar;
 in vec3 vertNormal;
 in vec4 vertPosition;
-in vec4 vertColor; //may not be needed
+in vec4 vertColor;
 
 out vec4 outputColor;
 
