@@ -24,6 +24,7 @@ public:
 protected:
     
     ofMesh mesh;
+    std::vector<ofVec3f> originalVertices;
 
 private:
     
@@ -56,6 +57,8 @@ private:
     ofVec3f cameraLocation;
     
     UnitRGB mapToUnitRGB(float red255, float green255, float blue255);
+    
+    void storeOriginalMesh();
 
 };
 
